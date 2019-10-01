@@ -83,7 +83,7 @@ class FlowTip extends React.Component<Props, State> {
     window.addEventListener('resize', this._handleScroll);
   }
 
-  componentWillReceiveProps(nextProps: Props): void {
+  UNSAFE_componentWillReceiveProps(nextProps: Props): void {
     this._nextContainingBlock = this._getContainingBlockRect();
     this._nextBounds = this._getBoundsRect(nextProps);
 
