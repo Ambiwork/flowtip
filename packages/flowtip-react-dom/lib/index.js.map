@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;AACA;;AACA","sourcesContent":["// @flow\nexport {default} from './FlowTip';\nexport {getContentStyle, getTailStyle} from './util/render';\nexport type {\n  Style,\n  ContentProps,\n  TailProps,\n  RenderProps,\n  Render,\n  Props,\n  State,\n} from './types';\n"],"file":"index.js"}
