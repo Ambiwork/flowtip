@@ -1,6 +1,3 @@
 node_modules
 *.log
 coverage
-es
-lib
-dist
