@@ -1,7 +1,6 @@
 import * as React from 'react';
 import flowtip, {CENTER, Rect, areEqualDimensions} from 'flowtip-core';
 import {RectLike, Region, Dimensions, Result} from 'flowtip-core';
-import throttle from 'lodash.throttle';
 import {Props, State} from './types';
 import findDOMNode from './util/findDOMNode';
 import {
@@ -335,11 +334,11 @@ class FlowTip extends React.Component<Props, State> {
    *
    * @returns {void}
    */
-  _handleScroll = throttle(() => {
+  _handleScroll = () => {
     this._nextContainingBlock = this._getContainingBlockRect();
     this._nextBounds = this._getBoundsRect(this.props);
     this._updateState(this.props);
-  }, 1000);
+  };
 
   render(): React.ReactNode {
     return this.props.render({
